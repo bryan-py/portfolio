@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+
+    --fundo-site: #020617;  
+    --fundo-secoes: #080D1F;
+    --textos: #D6D6DC;  
+
+    --dev-front-end: #208cfc;
+      
+    --links: #B8B9C1;
+    --links-hover: #00D9FF;
+
+    --gradient-1:#A809CF;
+    --gradient-2: #486CFF;
+    --gradient-3: #0DB1E2;
+
+    --text-github: #5E6A86;
+   
+    --button-apesentacao-contato:  rgb(82, 82, 224);
+    --button-apresentacao-contato-hover: #3A3EA6;
+    --buton-color: rgb(239, 240, 247);
+
+    --texto-atras-titulo: #12153F;
+    --titulos: #00D9FF;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: var(--fundo-site);
+    height: 100vh;
+    color: white;
+}
+
+header {
+    display: flex;
+    padding: 25px;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--fundo-site);
+    box-shadow: 0px 0px 30px 10px var(--fundo-site);
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    gap: 2px;
+}
+
+.name {
+    color: var(--textos);
+    font-weight: bold;
+}
+
+.name:hover {
+    color: var(--links-hover);
+    position: relative;
+    bottom: 3px;
+}
+
+.navgation ul {
+    display: flex;
+    gap: 25px;
+}
+
+.navgation li {
+    list-style: none;
+    color: var(--textos);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 1s ;
+}
+
+.navgation li:hover {
+    color: var(--links-hover);
+    text-decoration: overline;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-abaixo-do-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* colocar para between*/
+    align-items: center;
+    height: 80vh;
+    width: 80%;
+}
+
+
+.nome-profissao-skills-conhecer-portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-profissao-skills-conhecer-portfolio p {
+    color: var(--textos);
+    font-size: 20px;
+}
+
+.nome-profissao-skills-conhecer-portfolio h1 {
+    background-image: linear-gradient(90deg, var(--gradient-1), var(--gradient-3));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 52px;
+    font-weight: 900;
+}
+
+
+.nome-profissao-skills-conhecer-portfolio span {
+    font-size: 35px;
+    color: var(--dev-front-end);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-right: 4px solid;
+    width: 20.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(20),
+    blinking 0.5s  infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+ 
+}
+
+.nome-profissao-skills-conhecer-portfolio button {
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    padding: 2px;
+    background-color: transparent;
+    color: var(--textos);
+    background: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    width: 16em;
+}
+
+.borda-gradient {
+    background-color: var(--fundo-site);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 1s;
+}
+
+.borda-gradient:hover {
+    background-color: linear-gradient(90deg, var(--gradient-1), var(--gradient-2), var(--gradient-3));
+}
+
+.home-img img {
+    width: 450px;
+}
+
+
+.container-me-apresentando {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--fundo-secoes);
+    width: 1024px;
+    border-radius: 8px;
+    padding: 60px;
+    margin-top: 10em;
+}
+
+.me-apresentando-img img {
+    width: 220px;
+}
+
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30em;
+}
+
+.apresentacao h2 {
+    color: var(--titulos);
+}
+
+#entusiasta {
+    color: var(--titulos);
+    text-decoration: underline;
+}
+
+.apresentacao strong {
+    color: var(--text-github);
+}
+
+.apresentacao a {
+    color: var(--links);
+}
+
+.apresentacao a:hover {
+    color: var(--links-hover);
+}
+
+.contato-ler-mais {
+    display: flex;
+    gap: 20px;
+}
+
+.contato-ler-mais button{
+    background-color: var(--button-apesentacao-contato);
+    border: none;
+    color: var(--buton-color);
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contato-ler-mais button:hover {
+    background-color: var(--button-apresentacao-contato-hover);
+    transition: 0.5s;
+}
+
+#apresentacao-ler-mais {
+    background-color: transparent;
+    color: var(--links);
+    gap: 0;
+}
+
+#apresentacao-ler-mais:hover
+ {
+    color: var(--links-hover);
+    text-decoration: underline;
+    transition: 0.5s;
+}
