@@ -1,0 +1,40 @@
+/* ── Skills ── */
+#skills {
+    margin: 8em 0 12em 0;
+}
+
+#skills h1 {
+    margin: 2em 0 0.5em 0;
+}
+
+#skills .title {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    margin: auto;
+    background-color: var(--background-opacity);
+    box-shadow: 2px 2px 15px var(--box-shadow);
+    border-radius: 30px;
+    padding: 2em;
+    width: 72em;
+    max-width: 100%;
+}
+
+.logo-skills div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 10em;
+    transition: 0.5s;
+}
+
+.logo-skills div:hover { transform: scale(1.1); }
+.logo-skills img       { height: 4.5em; width: 4.5em; }

@@ -1,0 +1,122 @@
+/* ── Projects ── */
+
+#projects h1 {
+    margin: 2em 0 0.5em 0;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    justify-items: center;
+    margin: 2em 0 10em 0;
+    padding: 0 2rem 4rem;
+}
+
+/* Card */
+.project-card {
+    background-color: var(--background-opacity);
+    box-shadow: 2px 2px 15px var(--box-shadow);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 8px 24px var(--gray);
+}
+
+/* Imagem */
+.project-card__img-wrapper {
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+    background-color: #d0d8e8;
+    position: relative;
+}
+
+.project-card__img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card__img-wrapper.no-img::after {
+    content: 'Sem imagem';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.project-card__img-wrapper.no-img img { display: none; }
+
+/* Body */
+.project-card__body {
+    padding: 1.1rem 1.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+/* Tech tags */
+.project-card__techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tech-tag {
+    background-color: var(--blue-opacity2);
+    color: var(--blue);
+    border: 1px solid var(--blue-opacity);
+    border-radius: 50px;
+    padding: 2px 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.project-card__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--gray);
+    margin-top: 0.2rem;
+}
+
+.project-card__desc {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.5;
+    flex: 1;
+}
+
+/* Links */
+.project-card__links {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 0.6rem;
+}
+
+.project-card__links a {
+    color: var(--gray);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.project-card__links a:hover { color: var(--blue); }
+
+.project-card__links a[aria-disabled="true"] {
+    opacity: 0.35;
+    pointer-events: none;
+}

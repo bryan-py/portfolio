@@ -5,23 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/darkmode.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Bryan Portfólio</title>
 </head>
 
 <body>
+    <button id="theme-toggle" aria-label="Alternar tema">
+        <i class="icon-sun bi bi-sun-fill"></i>
+        <i class="icon-moon bi bi-moon-stars-fill"></i>
+    </button>
+
     <div class="video-background">
         <video autoplay loop muted playsinline>
             <source src="video/fundo-portfolio.mp4" type="video/mp4">
         </video>
     </div>
+
     <header>
         <div class="title">
             <h1>Bryan</h1>
             <h1 class="blue">Portfólio</h1>
         </div>
+        <button class="hamburger" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+        </button>
         <nav class="nav-list">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -32,14 +57,16 @@
             </ul>
         </nav>
     </header>
+
     <main class="animate__animated animate__fadeInUp">
         <div class="title">
             <h1>Olá, eu sou</h1>
             <h1 class="blue">Bryan.</h1>
         </div>
-        <p>Tecnologia, Desenvolviemnto de Software e café</p>
+        <p>Tecnologia, Desenvolvimento de Software e café ☕</p>
         <a href="https://github.com/bryan-py"><button>Ver meu trabalho</button></a>
     </main>
+
     <section id="sobre">
         <div class="title">
             <h1>Sobre</h1>
@@ -57,90 +84,121 @@
                     oportunidades: eles as criam. <br><br>
                     Sou analítico, focado e colaborativo. Minha paixão por criação de sites e sistemas vai além da tela
                     — é sobre resolver, simplificar e entregar algo que realmente importa para quem usa.</p>
-                <a href="curriculo-bryan-2026.pdf" download="Curriculo-bryan"><button id="cv">Download CV</button></a>
-                <a href=""><button id="send-mensage">Entre em contato</button></a>
+                <a href="PDF/curriculo-bryan-2026.pdf" download="Curriculo-bryan"><button id="cv">Download CV <i
+                            class="bi bi-file-earmark-arrow-down-fill"></i></button></a>
+                <a href="#contato"><button id="send-mensage">Entre em contato</button></a>
             </div>
             <div class="info-container">
                 <img src="image/foto.jfif" alt="Minha foto">
             </div>
         </div>
     </section>
+
     <section id="skills">
         <div class="title">
-            <h1>Minhas</h1>
-            <h1 class="blue">Habilidades.</h1>
+            <h1>Ferramentas e</h1>
+            <h1 class="blue">Tecnologias.</h1>
         </div>
-        <article class="logo-skills">
-            <div>
-                <img src="image/html.png" alt="">
-                <h2>HTML</h2>
-            </div>
-            <div>
-                <img src="image/css.png" alt="">
-                <h2>CSS</h2>
-            </div>
-            <div>
-                <img src="image/javascript.png" alt="">
-                <h2>JavaScript</h2>
-            </div>
-            <div>
-                <img src="image/java.png" alt="">
-                <h2>Java</h2>
-            </div>
-            <div>
-                <img src="image/spring.png" alt="">
-                <h2>Spring Boot</h2>
-            </div>
-            <div>
-                <img src="image/bootstrap.png" alt="">
-                <h2>Bootstrap</h2>
-            </div>
-            <div>
-                <img src="image/mysql.png" alt="">
-                <h2>MySQL</h2>
-            </div>
-            <div>
-                <img src="image/mongo.svg" alt="">
-                <h2>MongoDB</h2>
-            </div>
-            <div>
-                <img src="image/vscode.png" alt="">
-                <h2>VsCode</h2>
-            </div>
-            <div><img src="image/intellij.png" alt="">
-                <h2>Intellij</h2>
-            </div>
-            <div>
-                <img src="image/figma.png" alt="">
-                <h2>Figma</h2>
-            </div>
-            <div>
-                <img src="image/github.png" alt="">
-                <h2>GitHub</h2>
-            </div>
-            <div>
-                <img src="image/git.png" alt="">
-                <h2>Git</h2>
-            </div>
-        </article>
+        <!-- Preenchido pelo script.js -->
+        <article class="logo-skills"></article>
     </section>
+
     <section id="projects">
         <div class="title">
             <h1>Meus</h1>
             <h1 class="blue">Projetos.</h1>
         </div>
-        
+        <article class="projects">
+            <!-- Preenchido pelo script.js -->
+            <div class="projects-container"></div>
+        </article>
     </section>
+
     <section id="contato">
         <div class="title">
             <h1>Entre em</h1>
-            <h1 class="blue">Contato</h1>
+            <h1 class="blue">contato</h1>
         </div>
-        
+
+        <p class="contato-subtitle">
+            Tem algum projeto em mente ou gostaria de colaborar? Entre em contato. Estou sempre
+            aberto a novas oportunidades.
+        </p>
+
+        <div class="contato-wrapper">
+            <div class="contato-info">
+                <h3>Informações de contato</h3>
+
+                <div class="contato-info-item">
+                    <a href="https://www.linkedin.com/in/bryan-iuri-santos-291aaa258/" target="_blank">
+                        <div class="contato-info-icon" id="linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                        <div class="contato-info-text">
+                            <strong>LinkedIn</strong>
+                            <a href="https://www.linkedin.com/in/bryan-iuri-santos-291aaa258/" target="_blank">Fale
+                                comigo aqui</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contato-info-item">
+                    <a href="https://github.com/bryan-py" target="_blank">
+                        <div class="contato-info-icon" id="github">
+                            <i class="bi bi-github"></i>
+                        </div>
+                        <div class="contato-info-text">
+                            <strong>GitHub</strong>
+                            <a href="https://github.com/bryan-py" target="_blank">bryan-py</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contato-info-item">
+                    <div class="contato-info-icon" id="whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                    <div class="contato-info-text">
+                        <strong>WhatsApp</strong>
+                        <span>+55 (11) 94876-0457</span>
+                    </div>
+                </div>
+
+                <div class="contato-info-item">
+                    <div class="contato-info-icon" id="localizacao">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="contato-info-text">
+                        <strong>Localização</strong>
+                        <span>Brasil</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-form-box">
+                <h3>Enviar uma mensagem</h3>
+                <form id="contact-form" action="https://formspree.io/f/mgodypbv" method="POST">
+                    <input type="hidden" name="_next" value="URL_DO_SEU_SITE_AQUI">
+                    <input type="hidden" name="_subject" value="Nova mensagem do portfólio!">
+
+                    <input type="text" name="nome" placeholder="Seu nome..." required>
+                    <input type="email" name="email" placeholder="email@email.com" required>
+                    <textarea name="mensagem" placeholder="Olá, gostaria de falar sobre..." required></textarea>
+
+                    <button type="submit" class="btn-enviar">
+                        Enviar mensagem&nbsp;<i class="bi bi-send-fill"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
     </section>
+
     <footer>
         <p>© 2026 Bryan, All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/darkmode.js"></script>
 </body>
 
 </html>
